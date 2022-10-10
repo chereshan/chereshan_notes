@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
+project = 'Chereshan-docs'
 copyright = '2021, Graziella'
-author = 'Graziella'
+author = 'chereshan'
 
 release = '0.1'
 version = '0.1.0'
