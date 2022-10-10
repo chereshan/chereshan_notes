@@ -44,13 +44,8 @@
    :caption: Темы:
 
    Темы/Read the Docs
+   Темы/Git
 
-.. toctree::
-   :maxdepth: 2
-   :caption: guidelines:
-
-   options/justlogic
-   options/justcode
 
 Indices and tables
 ==================
