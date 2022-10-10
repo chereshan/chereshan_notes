@@ -45,6 +45,11 @@
 
    Темы/Read the Docs
    Темы/Git
+   notebooks/(TEXTBOOK) Matplotlib
+   notebooks/(TEXTBOOK) Econometrics
+   notebooks/(TEXTBOOK) linearmodels
+   notebooks/(TEXTBOOK) Optimization
+   notebooks/(TEXTBOOK) pandas
 
 
 Indices and tables
