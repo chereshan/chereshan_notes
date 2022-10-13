@@ -9,7 +9,7 @@ Introduction
     # Магические команды Jupyter
     %matplotlib notebook #Интерактивный режим
     %matplotlib qt
-    %matplotlib inline #Вывод в Jupyter'е
+    %matplotlib inline #Позволяет вывод в Jupyter'е графиков сразу под ячейками, а не в отдельном окне
 
 .. code:: ipython3
 
@@ -29,6 +29,7 @@ The first line tells Python that we are using the matplotlib.pyplot
 module. To save on a bit of typing, we make the name **plt** equivalent
 to matplotlib.pyplot. This is a very common practice that you will see
 in matplotlib code.
+matplotlib.pyplot - библиотека для потсроения плоских фигур
 
 The fourth line plots a curve, where the x coordinates of the curve’s
 points are given in the list X, and the y coordinates of the curve’s
@@ -62,6 +63,7 @@ anything you like.
 
     import math
     import matplotlib.pyplot as plt
+
     T = range(100)
     X = [(2 * math.pi * t) / len(T) for t in T]
     Y = [math.sin(value) for value in X]
@@ -78,6 +80,7 @@ anything you like.
 
     import numpy as np
     import matplotlib.pyplot as plt
+
     X = np.linspace(-3, 2, 200)
     Y = X ** 2 - 2 * X + 1.
     plt.plot(X, Y)
@@ -95,8 +98,8 @@ Plotting multiple curves
 
     import numpy as np
     import matplotlib.pyplot as plt
-    X = np.linspace(0, 2 * np.pi, 100)
     
+    X = np.linspace(0, 2 * np.pi, 100)
     Ya = np.sin(X)
     Yb = np.cos(X)
     plt.plot(X, Ya)
@@ -111,14 +114,14 @@ Plotting multiple curves
 The two curves show up with a different color automatically picked up by
 matplotlib.
 
-We use one function call plt.plot() for one curve; thus, we have to call
-plt.plot() here twice. However, we still have to call plt.show() only
-once. The functions calls plt. plot(X, Ya) and plt.plot(X, Yb) can be
+We use one function call ``plt.plot()`` for one curve; thus, we have to call
+``plt.plot()`` here twice. However, we still have to call ``plt.show()`` only
+once. The functions calls ``plt. plot(X, Ya)`` and ``plt.plot(X, Yb)`` can be
 seen as declarations of intentions. We want to link those two sets of
 points with a distinct curve for each.
 
 matplotlib will simply keep note of this intention but will not plot
-anything yet. The plt.show() curve, however, will signal that we want to
+anything yet. The ``plt.show()`` curve, however, will signal that we want to
 plot what we have described so far.
 
 .. code:: ipython3
@@ -152,7 +155,7 @@ Deferred Rendering
 
 This deferred rendering mechanism is central to matplotlib. You can
 declare what you render as and when it suits you. The graph will be
-rendered only when you call plt.show(). To illustrate this, let’s look
+rendered only when you call ``plt.show()``. To illustrate this, let’s look
 at the following script, which renders a bell-shaped curve, and the
 slope of that curve for each of its points:
 
@@ -175,10 +178,8 @@ slope of that curve for each of its points:
 
 .. image:: Matplotlib_files/Matplotlib_16_0.png
 
-
-.. code:: ipython3
-
-    Представление графиков на разных полях
+Представление графиков на разных полях
+----------------------------------------
 
 .. code:: ipython3
 
@@ -209,11 +210,11 @@ slope of that curve for each of its points:
 
 Здесь мы воспользовались новыми функциями:
 
-• **figure()** - функция для задания глобальных параметров отображения
+• ``figure()`` - функция для задания глобальных параметров отображения
 графиков. В нее, в качестве аргумента, мы передаем кортеж, определяющий
 размер общего поля.
 
-• **subplot()** - функция для задания местоположения поля с графиком.
+• ``subplot()`` - функция для задания местоположения поля с графиком.
 Существует несколько способов задания областей для вывода графиков. В
 примере мы воспользовались вариантом, который предполагает передачу трех
 аргументов: первый аргумент- количество строк, второй - столбцов в
@@ -275,9 +276,9 @@ Bar Chart
 .. image:: Matplotlib_files/Matplotlib_25_0.png
 
 
-.. code:: ipython3
 
-    The thickness of a bar
+The thickness of a bar
+-----------------------
 
 .. code:: ipython3
 
@@ -291,9 +292,9 @@ Bar Chart
 .. image:: Matplotlib_files/Matplotlib_27_0.png
 
 
-.. code:: ipython3
 
-    Horizontal bars
+Horizontal bars
+----------------
 
 .. code:: ipython3
 
@@ -307,9 +308,8 @@ Bar Chart
 .. image:: Matplotlib_files/Matplotlib_29_0.png
 
 
-.. code:: ipython3
-
-    Plotting multiple bar charts
+Plotting multiple bar charts
+-----------------------------
 
 .. code:: ipython3
 
@@ -349,10 +349,8 @@ Bar Chart
 
 .. image:: Matplotlib_files/Matplotlib_32_0.png
 
-
-.. code:: ipython3
-
-    Plotting stacked bar charts
+Plotting stacked bar charts
+----------------------------
 
 .. code:: ipython3
 
@@ -388,9 +386,8 @@ Bar Chart
 .. image:: Matplotlib_files/Matplotlib_35_0.png
 
 
-.. code:: ipython3
-
-    Plotting back-to-back bar charts
+Plotting back-to-back bar charts
+---------------------------------
 
 .. code:: ipython3
 
@@ -408,9 +405,9 @@ Bar Chart
 .. image:: Matplotlib_files/Matplotlib_37_0.png
 
 
-.. code:: ipython3
 
-    ## Plotting pie charts
+Plotting pie charts
+---------------------
 
 .. code:: ipython3
 
@@ -424,9 +421,9 @@ Bar Chart
 .. image:: Matplotlib_files/Matplotlib_39_0.png
 
 
-.. code:: ipython3
 
-    ## Plotting histograms
+Plotting histograms
+--------------------
 
 .. code:: ipython3
 
@@ -441,9 +438,8 @@ Bar Chart
 .. image:: Matplotlib_files/Matplotlib_41_0.png
 
 
-.. code:: ipython3
-
-    ## Plotting boxplots
+Plotting boxplots
+------------------
 
 .. code:: ipython3
 
@@ -483,9 +479,8 @@ Bar Chart
 
 
 
-.. code:: ipython3
-
-    ## Plotting triangulations
+Plotting triangulations
+------------------------
 
 .. code:: ipython3
 
@@ -508,7 +503,7 @@ Bar Chart
    image.png
 
 Корневым элементом при построении графиков в системе Matplotlib является
-Фигура (Figure). Все, что нарисовано на рисунке выше является элементами
+Фигура (``Figure``). Все, что нарисовано на рисунке выше является элементами
 фигуры.
 
 Рассмотрим ее составляющие более подробно. График На рисунке
@@ -519,10 +514,10 @@ Bar Chart
 
 Вторым, после непосредственно самого графика, по важности элементом
 фигуры являются оси. Для каждой оси можно задать метку (подпись),
-основные (major) и дополнительные (minor) элементы шкалы, их подписи,
+основные (``major``) и дополнительные (``minor``) элементы шкалы, их подписи,
 размер, толщину и диапазоны. Сетка и легенда Сетка и легенда являются
 элементами фигуры, которые значительно повышают информативность графика.
-Сетка может быть основной (major) и дополнительной (minor). Каждому типу
+Сетка может быть основной (``major``) и дополнительной (``minor``). Каждому типу
 сетки можно задавать цвет, толщину линии и тип. Для отображения сетки и
 легенды используются соответствующие команды.
 

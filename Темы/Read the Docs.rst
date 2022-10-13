@@ -10,8 +10,11 @@ https://docutils.sourceforge.io/rst.html
 
 https://www.sphinx-doc.org/en/master/
 
-Решение проблем
-================
+Подготовка к работе с Read the Docs
+===================================
+1. Устанавливаем sphinx 
+2. Устанавливаем pandoc
+
 Добавление Jupyter Notebook'ов build приводит к ошибкам при сборке на хостинге Read the Docs.
 Данная проблема может быть решена в результате реализации следующих шагов:
 1.Добавить корень проекта файл requirements.txt, в котором прописано следующее содержание:: 
@@ -25,13 +28,3 @@ Jupyter Notebbok и Read the Docs
 Для конвертации формата Jupyter Notebook ``.ipynb`` в RESTuctured Text ``.rst`` необходимо применить к выбранному файлу команду::
         nbconvert your_file.ipynb --to rst
 
-dfdfdbkbbhjbjhgjjhj----bhbhbhbh
--
-CodeMaster
------------
-
-Robot Turtles
--------------
-
-Primo/Cubetta
--------------

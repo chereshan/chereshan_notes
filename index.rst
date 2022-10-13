@@ -44,6 +44,8 @@
    Темы/Matplotlib
    Темы/Python
    Темы/Jupyter
+   Темы/reStructuredText
+   Темы/Sphinx
    
 
 
