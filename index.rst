@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Добро пожаловать всборник конспектов!
+Добро пожаловать в сборник конспектов!
 ======================================================
 .. caution::
    Это лучше в параллельный проект учебника, для которого использовать Санин template
@@ -23,20 +23,16 @@
    Первое, что я напишу - это то, как собственно работать со Sphinx и Read The Docs
    ``TOC`` - table of contents tree
 
-План:
-
-* Описание данных RLMS-HSE
-* RLMS-HSE для работы с индивидуальными данными и домохозяйствами
-* Веб-скрейпер с сайта 
-
-#. Описание данных RLMS-HSE
-#. RLMS-HSE для работы с индивидуальными данными и домохозяйствами
-#. Веб-скрейпер с сайта 
-
 Пример кода Python::
 
       def blabla(x):
          return x**2
+
+#. notebooks/(TEXTBOOK) Matplotlib
+#. notebooks/(TEXTBOOK) Econometrics
+#. notebooks/(TEXTBOOK) linearmodels
+#. notebooks/(TEXTBOOK) Optimization
+#. notebooks/(TEXTBOOK) pandas
 
 
 .. toctree::
@@ -45,11 +41,10 @@
 
    Темы/Read the Docs
    Темы/Git
-   notebooks/(TEXTBOOK) Matplotlib
-   notebooks/(TEXTBOOK) Econometrics
-   notebooks/(TEXTBOOK) linearmodels
-   notebooks/(TEXTBOOK) Optimization
-   notebooks/(TEXTBOOK) pandas
+   Темы/Matplotlib
+   Темы/Python
+   Темы/Jupyter
+   
 
 
 Indices and tables

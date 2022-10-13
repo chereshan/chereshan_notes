@@ -1,15 +1,32 @@
 Read the Docs
 **************
-Read the Docs упрощает документирование ПО, автоматизируя создание, управление версиями и хранение вашей документации.
-Здесь дается инструкция  как создаать 
-https://readthedocs.org/
+Read the Docs упрощает документирование ПО, автоматизируя создание, управление версиями и хранение документации.
+Полезные ссылки:
+https://readthedocs.org/ - 
 
-Key Goals
-===========================
+https://nbconvert.readthedocs.io/en/latest/usage.html
 
-Options
-=======
+https://docutils.sourceforge.io/rst.html
 
+https://www.sphinx-doc.org/en/master/
+
+Решение проблем
+================
+Добавление Jupyter Notebook'ов build приводит к ошибкам при сборке на хостинге Read the Docs.
+Данная проблема может быть решена в результате реализации следующих шагов:
+1.Добавить корень проекта файл requirements.txt, в котором прописано следующее содержание:: 
+        sphinx>=1.4
+        ipykernel
+        nbsphinx
+
+Jupyter Notebbok и Read the Docs
+=================================
+Файлы Jupyter Notebook (т.е. формата  ``.ipynb``) могут читаться Read the Docs. 
+Для конвертации формата Jupyter Notebook ``.ipynb`` в RESTuctured Text ``.rst`` необходимо применить к выбранному файлу команду::
+        nbconvert your_file.ipynb --to rst
+
+dfdfdbkbbhjbjhgjjhj----bhbhbhbh
+-
 CodeMaster
 -----------
 
