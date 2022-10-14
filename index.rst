@@ -46,6 +46,7 @@
    Темы/Jupyter
    Темы/reStructuredText
    Темы/Sphinx
+   Темы/Как выучить Computer Science самостоятельно
    
 
 
