@@ -28,3 +28,10 @@ Jupyter Notebbok и Read the Docs
 Для конвертации формата Jupyter Notebook ``.ipynb`` в RESTuctured Text ``.rst`` необходимо применить к выбранному файлу команду::
         nbconvert your_file.ipynb --to rst
 
+Для того, чтобы sphix парсил ``.ipynb`` формат в файле config нужно добавить следующий::
+        extensions = ["nbsphinx",]
+А в файл requirements.txt::
+        sphinx>=1.4
+        ipykernel
+        nbsphinx
+

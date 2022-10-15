@@ -47,6 +47,7 @@
    Темы/reStructuredText
    Темы/Sphinx
    Темы/Как выучить Computer Science самостоятельно
+   notebooks/Stepik 1
    
 
 
