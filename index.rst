@@ -48,6 +48,10 @@
    Темы/Sphinx
    Темы/Как выучить Computer Science самостоятельно
    notebooks/Stepik 1
+   Темы/Системы управления базами данных
+   Темы/LaTex
+   notebooks/СУБД
+
    
 
 
