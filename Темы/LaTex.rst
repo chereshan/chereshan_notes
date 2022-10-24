@@ -1,5 +1,31 @@
 LaTex
 *****
+Переписывание черновика
+=======================
+
+LaTex: разметка + текст (пасринг)-> печатный документ
+
+to parse - делать грамматический разбор
+``.tex`` - выходной файл
+``.ltx`` - plain tex
+TeX - КОМПИЛЯТОР
+
+\documentclass[options]{class}
+[] - необязательный аргумент
+{} - обязательный аргумент
+
+6 стандартных классов LaTex: article, letter, report, book, proc, slides
+
+\begin{document} - преамбула
+\end{document} - после этого latex все игнорит
+
+%комментарий
+
+article - короткий текст
+report - технический отчет
+proc - научная публикация в конференеции
+slides - презентация
+
 
 {\displaystyle \alpha A}	\alpha A	{\displaystyle \nu N}	\nu N
 {\displaystyle \beta B}	\beta B	{\displaystyle \xi \Xi }	\xi \Xi
