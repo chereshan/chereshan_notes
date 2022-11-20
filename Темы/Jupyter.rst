@@ -4,6 +4,15 @@ Jupyter
 Источники
 ---------
 
+0. https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Working%20With%20Markdown%20Cells.html
+1. https://www.markdownguide.org/cheat-sheet/
+2. https://www.markdownguide.org/tools
+3. https://www.markdownguide.org/tools/google-docs-to-markdown/
+4. https://daringfireball.net/projects/markdown/
+5. https://www.ibm.com/docs/en/watson-studio-local/1.2.3?topic=notebooks-markdown-jupyter-cheatsheet
+6. https://makeabilitylab.github.io/physcomp/signals/jupyter-notebook.html
+7. [How and why should you export reports from Jupyter Notebook to PDF](https://en.leftjoin.ru/all/export-jupyter-notebook-to-pdf/)
+
 1. Quantecon:  
 
 Jupyter notebooks - это один из возможных способов взаимодействия с Python и его научными библиотеками.
@@ -69,6 +78,14 @@ Magic-команды
 ``%who (тип)`` - все переменные данного типа
 ``%who_is (тип)`` - возвращает все переменные данного типа
 ``%whos`` - подробно обо всех переменных
+
+Исправление проблемы с некорректным отображением изображений в Jupyter Notebook
+-------------------------------------------------------------------------------
+
+Суть проблемы: Я копирую скриншоты в JN-документы. В JN они отображаются корректно, однако в html формате на Read the Docs корректно отображается лишь первое изображение, а остальные повтоярют тоже самое первое изображение.
+
+Решение: необходимо после вставки скриншота в JN переименовывать ``image.png`` на уникальное не повторяющееся в документе имя::
+    ![image.png](attachment:image.png)
 
 
 Основной синтаксис
