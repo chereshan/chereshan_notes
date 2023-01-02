@@ -76,6 +76,7 @@
    Темы/reStructuredText
    Темы/Sphinx
    Темы/Как выучить Computer Science самостоятельно
+   Темы/Все конспекты по базам данных
    notebooks/Stepik 1
    Темы/Системы управления базами данных
    Темы/LaTex
