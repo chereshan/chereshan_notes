@@ -71,7 +71,7 @@
    Темы/Read the Docs
    Темы/Git
    Темы/Matplotlib
-   Темы/Python
+   Темы/Python Textbook
    Темы/Jupyter
    Темы/reStructuredText
    Темы/Sphinx
